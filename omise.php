@@ -4,17 +4,17 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 
-class OmisePayment extends PaymentModuleCore
+class Omise extends PaymentModule
 {
     public function __construct()
     {
-        $this->name = 'Omise';
+        $this->name = 'omise';
         $this->tab = 'payments_gateways';
-        $this->version = '1.0';
+        $this->version = '1.0.0';
         $this->author = 'Thanabodee Charoenpiriyakij';
 
         parent::__construct();
 
-        $this->displayName = $this->l('Omise');
+        $this->displayName = $this->l('Omise Payment Gateway');
     }
 }
